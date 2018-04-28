@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/song_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin_left"
+        android:layout_marginStart="@dimen/text_margin_start"
+        android:text="@string/dream_on"
+        android:textStyle="bold"
+        tools:text="@string/dream_on" />
+
+    <TextView
+        android:id="@+id/album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/song_title"
+        android:layout_marginLeft="@dimen/text_margin_left"
+        android:layout_marginStart="@dimen/text_margin_start"
+        android:text="@string/exciter"
+        tools:text="@string/exciter" />
+
+
+</RelativeLayout>

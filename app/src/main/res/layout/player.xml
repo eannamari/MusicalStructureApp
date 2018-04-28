@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Now playing"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:padding="20dp"/>
+
+        <TextView
+            android:id="@+id/album_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camouflage"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/c_greyscale_pic"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/actualSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shine"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginBottom="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/previousButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/music_rewind_button" />
+
+            <ImageButton
+                android:id="@+id/play_pauseButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/music_play_button"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+
+            <ImageButton
+                android:id="@+id/nextButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/music_forward_button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
